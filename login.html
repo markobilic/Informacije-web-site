@@ -1,0 +1,68 @@
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../../favicon.ico">
+
+    <!-- meta tagovi moraju biti prvi, sve ostalo ide ispod -->
+    <title>E-Note</title>
+	<script src="jquery-1.12.3.min.js"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+</head>
+<body style="background: url(http://notes.io/theme/macNew/images/background.jpg)">
+
+
+
+<div class="frame">
+	<div class="login-box">
+		<form>
+			<label for="username">Username</label></br>
+			<input type="text" id="username" placeholder="username"></p>
+			<label for="password">Password</label></br>
+			<input type="password" id="password" placeholder="password"></p></br>
+			<button type="submit">Sign in</button></br></br></a>
+			<button><a href="#popup2" onclick="myFunction()">Register</a></button>
+
+					<div id="popup2" class="overlay">
+						<div class="popup">
+							<a id="closed" class="close" href="#" onclick="myFunction2()">&times;</a>
+							<form name="register" action="#" id="form2" method="post">             				
+								<p>Ime: <br><input type="text" size="50"  id="ime" type="text"></p>
+								<p>Prezime: <br><input type="text" size="50"  id="prezime" type="text"></p>
+								<p>Username: <br><input type="text" size="50"  id="username" type="text"></p>
+								<p>Password: <br><input type="password" size="50"  id="password" type="text"></p>
+								<p>Email: <br><input type="email" size="50"  id="email" type="text"></p>														
+								<br>
+								<input id="Register" value="Register" type="submit" onclick="myFunction2()"> <br>						
+							</form>
+							
+						</div>
+					</div>	
+
+			
+		</form>
+	</div>
+	
+</div>
+
+
+
+<script>
+function myFunction(){
+document.getElementById("popup2").style.display = "block";
+}
+
+function myFunction2(){
+document.getElementById("popup2").style.display = "none";
+}
+</script>
+
+
+</body>
+</html>

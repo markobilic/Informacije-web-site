@@ -1,0 +1,82 @@
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../../favicon.ico">
+
+    <!-- meta tagovi moraju biti prvi, sve ostalo ide ispod -->
+    <title>E-Note</title>
+	<script src="jquery-1.12.3.min.js"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+   
+</head>
+
+
+<body>
+
+
+<div class="fluid-container">
+	
+		<ul class="head">
+			<li class="head"><a href="#"> My Notes</a></li>
+			<li class="head" style="color:black"><a class="button" href="#popup3" onclick="myFunction()">Add Note</a></li>
+			<li class="head"><a href="#" > Add picture </a></li>
+			<li class="head" style="border:none;"><p id="name">E-Note</p></li>
+		<ul class="head" style="float:right; list-style-type:none;border-left:1px solid #bbb" >
+
+		</ul>
+		</ul>			
+	
+	<div id="popup3" class="overlay" style=" margin-top:3.5%; background: rgba(0, 0, 0, 0.7);">
+		<div class="popup2">
+			<a class="close" href="#" onclick="myFunction2()">&times;</a>
+				<form name="note_text" action="#" id="form3" method="post">              				
+					<div id="wrapper2">
+						<form id="paper2" method="get" action="">
+							<div id="margin2">Name: <input id="title2" type="text" name="title2">
+							</div>
+							<textarea placeholder="Note text" id="text2" name="text" rows="15" style="overflow: hidden; word-wrap: break-word; resize: none; height: 75%; "></textarea>  
+							<br>
+							<input id="button2" type="submit" value="Create" onclick="myFunction2()">														
+						</form>
+					</div>				
+					<br>
+						
+				</form>
+		</div>
+	</div>
+	
+	
+	
+	
+</div>
+
+
+<script>
+function myFunction(){
+document.getElementById("popup3").style.display = "block";
+}
+
+function myFunction2(){
+document.getElementById("popup3").style.display = "none";
+}
+</script>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</body>
+</html>
